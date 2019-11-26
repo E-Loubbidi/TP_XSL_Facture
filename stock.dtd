@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT stock (produits, clients, commandes) >
+<!ELEMENT produits (produit*) >
+<!ELEMENT  produit (designation, categorie, prix) >
+<!ATTLIST  produit referenceProduit ID #REQUIRED >
+<!ELEMENT  designation (#PCDATA) >
+<!ELEMENT  categorie (#PCDATA) >
+<!ELEMENT  prix (#PCDATA) >
+<!ELEMENT clients (client*) >
+<!ELEMENT client (nom, prenom, adresse, telephone, email) >
+<!ATTLIST  client clientId ID #REQUIRED >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT adresse (ville, rue, codePostale) >
+<!ELEMENT ville (#PCDATA) >
+<!ELEMENT rue (#PCDATA) >
+<!ELEMENT codePostale (#PCDATA) >
+<!ELEMENT telephone (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT commandes (commande*) >
+<!ELEMENT commande (clientId, referenceProduit+, dateCommande, dateReception, livraison) >
+<!ATTLIST  commande commandeId ID #REQUIRED >
+<!ELEMENT clientId (#PCDATA) >
+<!ELEMENT referenceProduit (#PCDATA) >
+<!ATTLIST referenceProduit quantite CDATA "1" >
+<!ELEMENT dateCommande (#PCDATA) >
+<!ELEMENT dateReception (#PCDATA) >
+<!ELEMENT livraison (dateLivraison, nomLivraison) >
+<!ELEMENT dateLivraison (#PCDATA) >
+<!ELEMENT nomLivraison (#PCDATA) >

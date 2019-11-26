@@ -1,0 +1,292 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<?xml-stylesheet type="text/xsl" href="facture.xsl"?>
+
+<!DOCTYPE stock SYSTEM "stock.dtd">
+
+<stock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="stock.xsd">
+    
+    <produits>
+        <produit referenceProduit = "IN00">
+           <designation>ecran</designation> 
+            <categorie>hardware</categorie>
+            <prix>3000</prix>
+        </produit>
+        <produit referenceProduit = "AL25">
+            <designation>compilateur C</designation>
+            <categorie>software</categorie>
+            <prix>700</prix>
+        </produit>
+        <produit referenceProduit = "TE20">
+            <designation>table ordinateur</designation>
+            <categorie>bureau</categorie>
+            <prix>1500</prix>
+        </produit>
+        <produit referenceProduit = "PH10"> 
+            <designation>imprimante</designation>
+            <categorie>hardware</categorie>
+            <prix>2450</prix>
+        </produit>
+        <produit referenceProduit = "PH20">
+            <designation>lecteur CD</designation>
+            <categorie>hardware</categorie>
+            <prix>750</prix>
+        </produit>
+        <produit referenceProduit = "CO10">
+            <designation>clé USB</designation>
+            <categorie>hardware</categorie>
+            <prix>90</prix>
+        </produit>
+        <produit referenceProduit = "CO12">
+            <designation>graveur</designation>
+            <categorie>hardware</categorie>
+            <prix>900</prix>
+        </produit>
+        <produit referenceProduit = "IN10">
+            <designation>scanner</designation>
+            <categorie>hardware</categorie>
+            <prix>1300</prix>
+        </produit>
+        <produit referenceProduit = "AL50">
+            <designation>windows 7</designation>
+            <categorie>software</categorie>
+            <prix>2500</prix>
+        </produit>
+        <produit referenceProduit = "AL27">
+            <designation>windows 10</designation>
+            <categorie>software</categorie>
+            <prix>4000</prix>
+        </produit>
+    </produits>
+    
+    <clients>
+        <client clientId = "c1">
+            <nom>akhdar</nom>
+            <prenom>abir</prenom>
+            <adresse>
+               <ville>casablanca</ville> 
+                <rue>anassi</rue>
+                <codePostale>25000</codePostale>
+            </adresse>
+            <telephone>061564892318</telephone>
+            <email>abir@gmail.com</email>
+        </client>
+        <client clientId = "c2">
+            <nom>miftah</nom>
+            <prenom>yassine</prenom>
+            <adresse>
+                <ville>mohammedia</ville> 
+                <rue>alia</rue>
+                <codePostale>35000</codePostale>
+            </adresse>
+            <telephone>0658947123</telephone>
+            <email>yassine@gmail.com</email>
+        </client>
+        <client clientId = "c3">
+            <nom>idrissi</nom>
+            <prenom>mohammed</prenom>
+            <adresse>
+                <ville>benimellal</ville> 
+                <rue>hay zitoune</rue>
+                <codePostale>48000</codePostale>
+            </adresse>
+            <telephone>0654879485</telephone>
+            <email>mohammed@gmail.com</email>
+        </client>
+        <client clientId = "c4">
+            <nom>lotfi</nom>
+            <prenom>nabila</prenom>
+            <adresse>
+                <ville>swira</ville> 
+                <rue>annajah</rue>
+                <codePostale>55200</codePostale>
+            </adresse>
+            <telephone>0654789547</telephone>
+            <email>nabila@gmail.com</email>
+        </client>
+        <client clientId = "c5">
+            <nom>raki</nom>
+            <prenom>merriem</prenom>
+            <adresse>
+                <ville>marrakech</ville> 
+                <rue>mdina kdima</rue>
+                <codePostale>79000</codePostale>
+            </adresse>
+            <telephone>0654789541</telephone>
+            <email>merriem@gmail.com</email>
+        </client>
+        <client clientId = "c6">
+            <nom>lotfi</nom>
+            <prenom>zakaria</prenom>
+            <adresse>
+                <ville>casablanca</ville> 
+                <rue>hay mohammadi</rue>
+                <codePostale>31000</codePostale>
+            </adresse>
+            <telephone>0658741519</telephone>
+            <email>zakaria@gmail.com</email>
+        </client>
+        <client clientId = "c7">
+            <nom>hamdaoui</nom>
+            <prenom>khadija</prenom>
+            <adresse>
+                <ville>rabat</ville> 
+                <rue>irfane</rue>
+                <codePostale>75060</codePostale>
+            </adresse>
+            <telephone>0654789521</telephone>
+            <email>khadija@gmail.com</email>
+        </client>
+        <client clientId = "c8">
+            <nom>fadl</nom>
+            <prenom>omar</prenom>
+            <adresse>
+                <ville>agadir</ville> 
+                <rue>nasr</rue>
+                <codePostale>39085</codePostale>
+            </adresse>
+            <telephone>0654879512</telephone>
+            <email>omar@gmail.com</email>
+        </client>
+        <client clientId = "c9">
+            <nom>malak</nom>
+            <prenom>niama</prenom>
+            <adresse>
+                <ville>meknes</ville> 
+                <rue>nour</rue>
+                <codePostale>12000</codePostale>
+            </adresse>
+            <telephone>0615487951</telephone>
+            <email>nima@gmail.com</email>
+        </client>
+        <client clientId = "c10">
+            <nom>moutaki</nom>
+            <prenom>latifa</prenom>
+            <adresse>
+                <ville>casablanca</ville> 
+                <rue>ibn sina</rue>
+                <codePostale>27000</codePostale>
+            </adresse>
+            <telephone>0645879514</telephone>
+            <email>latifa@gmail.com</email>
+        </client>
+    </clients>
+    
+    <commandes>
+        <commande commandeId = "com1">
+            <clientId>7</clientId>
+            <referenceProduit quantite = "3">CO10</referenceProduit>
+            <dateCommande>2019-10-05</dateCommande>
+            <dateReception>2019-10-10</dateReception>
+            <livraison >
+                <dateLivraison>2019-10-06</dateLivraison>
+                <nomLivraison>amana</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com2">
+            <clientId>3</clientId>
+            <referenceProduit quantite = "10">IN00</referenceProduit>
+            <referenceProduit quantite = "7">PH10</referenceProduit>
+            <dateCommande>2019-11-03</dateCommande>
+            <dateReception>2019-11-09</dateReception>
+            <livraison >
+                <dateLivraison>2019-11-04</dateLivraison>
+                <nomLivraison>ctm</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com3">
+            <clientId>1</clientId>
+            <referenceProduit quantite = "17">PH20</referenceProduit>
+            <referenceProduit quantite = "20">CO12</referenceProduit>
+            <referenceProduit quantite = "13">IN10</referenceProduit>
+            <dateCommande>2019-09-11</dateCommande>
+            <dateReception>2019-09-20</dateReception>
+            <livraison >
+                <dateLivraison>2019-09-13</dateLivraison>
+                <nomLivraison>livrasonMaroc</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com4">
+            <clientId>5</clientId>
+            <referenceProduit quantite = "5">IN00</referenceProduit>
+            <referenceProduit quantite = "14">AL25</referenceProduit>
+            <referenceProduit quantite = "19">TE20</referenceProduit>
+            <referenceProduit quantite = "25">AL27</referenceProduit>
+            <dateCommande>2019-08-24</dateCommande>
+            <dateReception>2019-09-01</dateReception>
+            <livraison >
+                <dateLivraison>2019-08-02</dateLivraison>
+                <nomLivraison>amana</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com5">
+            <clientId>2</clientId>
+            <referenceProduit quantite = "7">AL50</referenceProduit>
+            <dateCommande>2019-06-15</dateCommande>
+            <dateReception>2019-06-20</dateReception>
+            <livraison >
+                <dateLivraison>2019-06-16</dateLivraison>
+                <nomLivraison>ctm</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com6">
+            <clientId>4</clientId>
+            <referenceProduit quantite = "21">PH10</referenceProduit>
+            <referenceProduit quantite = "33">PH20</referenceProduit>
+            <referenceProduit quantite = "28">CO10</referenceProduit>
+            <referenceProduit quantite = "18">CO12</referenceProduit>
+            <referenceProduit quantite = "15">IN10</referenceProduit>
+            <dateCommande>2019-07-08</dateCommande>
+            <dateReception>2019-07-20</dateReception>
+            <livraison >
+                <dateLivraison>2019-07-10</dateLivraison>
+                <nomLivraison>livraisonMaroc</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com7">
+            <clientId>9</clientId>
+            <referenceProduit quantite = "10">CO10</referenceProduit>
+            <dateCommande>2019-05-06</dateCommande>
+            <dateReception>2019-05-12</dateReception>
+            <livraison >
+                <dateLivraison>2019-05-07</dateLivraison>
+                <nomLivraison>postMaroc</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com8">
+            <clientId>1</clientId>
+            <referenceProduit quantite = "4">IN00</referenceProduit>
+            <referenceProduit quantite = "8">AL25</referenceProduit>
+            <dateCommande>2018-12-20</dateCommande>
+            <dateReception>2018-12-27</dateReception>
+            <livraison >
+                <dateLivraison>2018-12-23</dateLivraison>
+                <nomLivraison>livraisonMaroc</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com9">
+            <clientId>10</clientId>
+            <referenceProduit quantite = "3">TE20</referenceProduit>
+            <referenceProduit quantite = "1">PH10</referenceProduit>
+            <referenceProduit quantite = "6">PH20</referenceProduit>
+            <dateCommande>2019-02-08</dateCommande>
+            <dateReception>2019-02-16</dateReception>
+            <livraison >
+                <dateLivraison>2019-02-11</dateLivraison>
+                <nomLivraison>amana</nomLivraison>
+            </livraison>
+        </commande>
+        <commande commandeId = "com10">
+            <clientId>6</clientId>
+            <referenceProduit quantite = "1">CO10</referenceProduit>
+            <dateCommande>2019-11-20</dateCommande>
+            <dateReception>2019-11-24</dateReception>
+            <livraison >
+                <dateLivraison>2019-11-21</dateLivraison>
+                <nomLivraison>ctm</nomLivraison>
+            </livraison>
+        </commande>
+    </commandes>
+    
+</stock>
+
